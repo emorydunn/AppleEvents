@@ -4,6 +4,9 @@
 //  workaround until we have a pure Mach implementation; see also AEMShim.m
 //
 
+import Foundation
+import AEMShim
+import CoreServices
 
 func carbonDescriptor(from desc: Descriptor, to result: inout AEDesc) {
     var data = desc.flatten()
